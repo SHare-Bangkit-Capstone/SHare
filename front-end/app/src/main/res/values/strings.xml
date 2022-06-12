@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">SHare</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="register">Daftar</string>
+    <string name="login">MASUK</string>
+    <string name="phone_number">No. HP</string>
+    <string name="action_logout">Action Logout</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_report">Report</string>
+
+    <!--    onboarding page-->
+
+    <string name="title_onboarding_1">Easy Report</string>
+    <string name="detail_onboarding_1">Sexual Harassment Care (SHare) kini memungkinkan pelaporan tindakan kekerasan seksual dilaporkan dengan mudah dalam satu aplikasi didukung dengan teknologi kecerdasan artifisial yang mutakhir</string>
+
+    <string name="title_onboarding_2">Safe Place</string>
+    <string name="detail_onboarding_2">ChatBot dan Psikolog terbaik kami akan berusaha secara maksimal melakukan tindakan yang tepat sasaran guna membantu anda dalam menyelesaikan masalah kekerasan seksual yang anda alami</string>
+
+    <string name="title_onboarding_3">Proses Hukum</string>
+    <string name="detail_onboarding_3">Resume berupa hasil validasi pasal - pasal UU TPKS bila sesuai dengan masalah anda akan diberikan agar pelaku kekerasan seksual dapat segera anda putuskan untuk dibawa ke jalur hukum</string>
+
+
+    <!--    dashboard page-->
+
+    <string name="title_uutpks">Ketahui UU TPKS</string>
+    <string name="detail_uutpks">Undang - Undang Tindak Pidana Kekerasan Seksual  mengatur pencegahan, penanganan, dan pemidanaan dalam kasus kekerasan seksual dengan perspektif korban yang memuat 8 Bab dan 93 pasal.</string>
+    <string name="title_jenis_kekerasan">Jenis Kekerasan</string>
+    <string name="title_hak_korban">Hak - Hak Korban</string>
+    <string name="content_pemulihan">Pemulihan</string>
+    <string name="content_penanganan">Penanganan</string>
+    <string name="content_perlindungan">perlindungan</string>
+    <string name="tab_text_1">DITANGANI</string>
+    <string name="tab_text_2">DILINDUNGI</string>
+    <string name="tab_text_3">DIPULIHKAN</string>
+    <string name="title_partner_psikolog_kami">Partner Psikolog Kami</string>
+    <string-array name="data_name">
+        <item>Tom</item>
+        <item>Budi</item>
+        <item>Hana</item>
+        <item>Siri</item>
+        <item>Alexa</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/psikolog_1</item>
+        <item>@drawable/psikolog_2</item>
+        <item>@drawable/psikolog_3</item>
+        <item>@drawable/psikolog_4</item>
+        <item>@drawable/psikolog_5</item>
+    </integer-array>
+
+    <!--    profile page-->
+    <string name="subtitle_tentang_aplikasi">Aplikasi ini dibangun oleh team kami yang beranggotakan:</string>
+    <string name="anggota_tentang_aplikasi_1">1. Naufal Jefri Ramadhan</string>
+    <string name="anggota_tentang_aplikasi_2">2. Bintang Haidar Pratama</string>
+    <string name="anggota_tentang_aplikasi_3">3. Farhan Mufti Hilmy</string>
+    <string name="anggota_tentang_aplikasi_4">4. Gabriella Yolanda K</string>
+    <string name="anggota_tentang_aplikasi_5">5. Mochamad Rizky Farhan Auliya</string>
+    <string name="anggota_tentang_aplikasi_6">6. Syamsul Tamimi Prasetya Aji</string>
+
+    <!--    pusat bantuan-->
+    <string name="subtitle_pusat_bantuan">Cara Melakukan Pelaporan</string>
+    <string name="detail_pusat_bantuan_1">1. Buka halaman report pada navigasi di bawah</string>
+    <string name="detail_pusat_bantuan_2">2. Pilih jawaban yang disediakan oleh Share Bot</string>
+    <string name="detail_pusat_bantuan_3">3. Share Bot akan menghubungkanmu ke psikolog untuk penanganan lebih lanjut</string>
+    <string name="detail_pusat_bantuan_4">4. Sistem akan memproses laporanmu apakah sesuai dengan salah satu pasal UU TPKS atau tidak</string>
+    <string name="detail_pusat_bantuan_5">5. Buka halaman notifikasi untuk pada navigasi di bawah untuk melihat progres pelaporan laporan yang berlangsung</string>
+    <string name="detail_pusat_bantuan_6">6. Jika tidak sesuai dengan pasal UU TPKS maka kamu akan memperoleh kejelasan terkait hal tersebut</string>
+    <string name="detail_pusat_bantuan_7">7. Apabila sesuai maka kamu akan memperoleh resume berisi deskripsi pasal UU TPKS yang termasuk pada tindak kekerasan yang kamu alami</string>
+    <string name="btn_keluar">Keluar</string>
+
+    <!--    report page-->
+    <string name="detail_report">Pilihlah opsi jawaban yang telah disediakan dari pertanyaan yang diajukan oleh Chatbot agar selanjutnya kami akan menghubungkan anda ke psikolog yang sesuai. Setelah itu, anda bisa melakukan konsultasi lebih lanjut terkait masalah yang anda alami, terakhir kami akan melakukan validasi aduan anda berdasarkan pasal yang tertera dalam UU TPKS </string>
+    <string name="btn_mulai">Mulai</string>
+    <string name="age">Umur</string>
+
+
+</resources>

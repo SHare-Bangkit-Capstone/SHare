@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "24929213756",
+    "project_id": "share-20db5",
+    "storage_bucket": "share-20db5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24929213756:android:00bf8ccdc018c83d7d1239",
+        "android_client_info": {
+          "package_name": "com.rechit.share"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24929213756-edh96urt69tv09s8fifjrfnf1j9l083v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaiEcHxIXHyIJdK7HUDNEwCQ8B0xu6-8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24929213756-edh96urt69tv09s8fifjrfnf1j9l083v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
