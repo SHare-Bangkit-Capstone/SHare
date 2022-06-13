@@ -6,9 +6,9 @@
      - https://colab.research.google.com/drive/1XEQyZnhEJAYs_LxVB0fcfud-FrQ0weKs?usp=sharing
      
   2. Android
-     A. SHare Application
+     a. SHare Application
         - https://github.com/SHare-Bangkit-Capstone/SHare/tree/main/front-end 
-     B. User Interface
+     b. User Interface
         - https://www.figma.com/file/xfFaCGyDrJORGKcQAXmxn6/Wireframe-SHare?node-id=0%3A1 
      
   3. API documentation:
