@@ -10,7 +10,6 @@ import com.rechit.share.databinding.FragmentNotificationBinding
 
 class NotificationFragment : Fragment() {
 
-    private lateinit var notificationViewModel: NotificationViewModel
 
     private var _binding: FragmentNotificationBinding? = null
     private val binding get() = _binding!!
@@ -19,7 +18,6 @@ class NotificationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        notificationViewModel = ViewModelProvider(this).get(NotificationViewModel::class.java)
         // Inflate the layout for this fragment
         _binding = FragmentNotificationBinding.inflate(inflater, container, false)
         val view = binding.root

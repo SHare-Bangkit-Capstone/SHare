@@ -12,6 +12,13 @@
     <string name="title_notification">Notification</string>
     <string name="title_report">Report</string>
 
+<!--    auth page-->
+    <string name="daftar"><u>Daftar</u></string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="lupa_password">lupa password?</string>
+    <string name="masuk"><u>Masuk</u></string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+
     <!--    onboarding page-->
 
     <string name="title_onboarding_1">Easy Report</string>
@@ -76,6 +83,8 @@
     <string name="detail_report">Pilihlah opsi jawaban yang telah disediakan dari pertanyaan yang diajukan oleh Chatbot agar selanjutnya kami akan menghubungkan anda ke psikolog yang sesuai. Setelah itu, anda bisa melakukan konsultasi lebih lanjut terkait masalah yang anda alami, terakhir kami akan melakukan validasi aduan anda berdasarkan pasal yang tertera dalam UU TPKS </string>
     <string name="btn_mulai">Mulai</string>
     <string name="age">Umur</string>
+    <string name="sharebot_guide">Pilihlah opsi jawaban yang telah disediakan dari pertanyaan yang diajukan oleh Chatbot agar selanjutnya kami akan menghubungkan anda ke psikolog yang sesuai.
+Setelah itu, anda bisa melakukan konsultasi lebih lanjut terkait masalah yang anda alami, terakhir kami akan melakukan validasi aduan anda berdasarkan pasal yang tertera dalam UU TPKS</string>
 
 
 </resources>

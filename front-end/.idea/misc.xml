@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/drawable/bg_outline_rectangle.xml" value="0.1195" />
+        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/drawable/font_start.xml" value="0.1195" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.138" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.138" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/drawable/ic_chatbot.xml" value="0.1425" />
@@ -37,12 +39,12 @@
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/about_application_content_view.xml" value="0.4" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/about_application_header_view.xml" value="0.12360688956433637" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/about_expansion_panel.xml" value="0.253125" />
-        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_login2.xml" value="0.22826086956521738" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_onboarding.xml" value="0.264" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_profile.xml" value="0.24010416666666667" />
-        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/content_view.xml" value="0.19572649572649573" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_dashboard.xml" value="0.4" />
@@ -56,7 +58,7 @@
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_pemulihan.xml" value="0.152" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_penanganan.xml" value="0.152" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_perlindungan.xml" value="0.176" />
-        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_report.xml" value="0.27350427350427353" />
+        <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_report.xml" value="0.264" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/fragment_secomd_page_onboarding.xml" value="0.24010416666666667" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/header_view.xml" value="0.23854166666666668" />
         <entry key="..\:/CODEIN/Android/projects2022/SHare/app/src/main/res/layout/help_center_content_view.xml" value="0.2076923076923077" />

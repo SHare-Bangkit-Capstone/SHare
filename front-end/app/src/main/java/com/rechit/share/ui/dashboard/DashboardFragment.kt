@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.tabs.TabLayoutMediator
 import com.rechit.share.R
@@ -14,8 +13,6 @@ import com.rechit.share.databinding.FragmentDashboardBinding
 import com.rechit.share.data.Psikolog
 
 class DashboardFragment : Fragment() {
-
-
 
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
