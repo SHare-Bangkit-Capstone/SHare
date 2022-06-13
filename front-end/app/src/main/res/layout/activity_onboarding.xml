@@ -16,8 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="18dp"
+        android:gravity="center"
         android:orientation="horizontal" />
 
     <ImageView
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/layoutDots"
         android:layout_margin = "32dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:src="@drawable/ic_outline_next"
         android:background="@null"
         android:clickable="true"
@@ -38,11 +39,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/layoutDots"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
         android:layout_margin = "24dp"
         android:background="@null"
         android:clickable="true"
-        android:text="Mulai"
+        android:text="@string/btn_onboarding_start"
         android:textColor="@color/black"
         android:textSize="18sp" />
 

@@ -29,23 +29,28 @@ class OnboardingActivity : AppCompatActivity() {
     private lateinit var customViewPagerAdapter: CustomViewPagerAdapter
     private lateinit var layouts: IntArray
 
+    private var viewPagerPageChangeListener: OnPageChangeListener = object : OnPageChangeListener {
+        override fun onPageSelected(position: Int) {
+            addBottomDots(position)
+            if (position == layouts.size - 1) {
+                binding.btnNext.visibility = View.INVISIBLE
+                binding.btnStart.visibility = View.VISIBLE
+            } else {
+                binding.btnNext.visibility = View.VISIBLE
+                binding.btnStart.visibility = View.INVISIBLE
+            }
+        }
+
+        override fun onPageScrolled(arg0: Int, arg1: Float, arg2: Int) {}
+        override fun onPageScrollStateChanged(arg0: Int) {}
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
 
         val pref = UserPreference.getInstance(dataStore)
         val mainViewModel = ViewModelProvider(this, ViewModelFactory(pref))[MainViewModel::class.java]
-
-//        mainViewModel.isFirstTimeLaunch().observe(this,
-//            { isFirstTimeLaunch: Boolean ->
-//                if (isFirstTimeLaunch) {
-//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-//                    switchTheme.isChecked = true
-//                } else {
-//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-//                    switchTheme.isChecked = false
-//                }
-//            })
-
 
         mainViewModel.isFirstTimeLaunch().observe(this
         ) { isFirstTimeLaunch: Boolean ->
@@ -57,37 +62,28 @@ class OnboardingActivity : AppCompatActivity() {
                 setContentView(binding.root)
             }
         }
-
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
-        setupView()
-        setupAction(mainViewModel)
-    }
-
-    private fun setupView() {
         layouts = intArrayOf(
             com.rechit.share.R.layout.fragment_onboarding1,
             com.rechit.share.R.layout.fragment_onboarding2,
             com.rechit.share.R.layout.fragment_onboarding3
         )
         customViewPagerAdapter = CustomViewPagerAdapter(layouts, this)
+        addBottomDots(0);
         binding.viewPager.adapter = customViewPagerAdapter
         binding.viewPager.addOnPageChangeListener(viewPagerPageChangeListener)
-        addBottomDots(0);
-    }
-
-    private fun setupAction(mainViewModel: MainViewModel) {
         binding.btnStart.setOnClickListener {
             mainViewModel.setFirstTimeLaunch(false)
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
         binding.btnNext.setOnClickListener {
-            mainViewModel.setFirstTimeLaunch(false)
             val current: Int = binding.viewPager.currentItem + 1
             if (current < layouts.size) {
                 // move to next screen
-                binding.viewPager.setCurrentItem(current)
+                binding.viewPager.currentItem = current
             } else {
+                mainViewModel.setFirstTimeLaunch(false)
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
@@ -110,27 +106,8 @@ class OnboardingActivity : AppCompatActivity() {
             binding.layoutDots.addView(dots[i])
         }
 
-        if (dots.size > 0) dots[currentPage]!!.setTextColor(colorsActive[currentPage])
+        if (dots.isNotEmpty()) dots[currentPage]!!.setTextColor(colorsActive[currentPage])
 
-    }
-
-    var viewPagerPageChangeListener: OnPageChangeListener = object : OnPageChangeListener {
-        override fun onPageSelected(position: Int) {
-            addBottomDots(position)
-            // mengubah button lanjut 'NEXT' / 'GOT IT'
-            if (position == layouts.size - 1) {
-                // last page. make button text to GOT IT
-                binding.btnNext.setVisibility(View.INVISIBLE)
-                binding.btnStart.setVisibility(View.VISIBLE)
-            } else {
-                // still pages are left
-                binding.btnNext.setVisibility(View.VISIBLE)
-                binding.btnStart.setVisibility(View.INVISIBLE)
-            }
-        }
-
-        override fun onPageScrolled(arg0: Int, arg1: Float, arg2: Int) {}
-        override fun onPageScrollStateChanged(arg0: Int) {}
     }
 
 }

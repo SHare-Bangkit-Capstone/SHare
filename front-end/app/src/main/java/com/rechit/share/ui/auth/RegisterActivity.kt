@@ -36,7 +36,6 @@ class RegisterActivity : AppCompatActivity() {
             val age = binding.ageEditText.text.toString()
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
-            Log.d("tes", "Masukah daftar $email dan $password serta $name")
             signUp(name, phone_number, age, email, password)
         }
     }

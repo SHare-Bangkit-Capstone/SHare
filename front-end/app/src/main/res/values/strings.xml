@@ -85,6 +85,7 @@
     <string name="age">Umur</string>
     <string name="sharebot_guide">Pilihlah opsi jawaban yang telah disediakan dari pertanyaan yang diajukan oleh Chatbot agar selanjutnya kami akan menghubungkan anda ke psikolog yang sesuai.
 Setelah itu, anda bisa melakukan konsultasi lebih lanjut terkait masalah yang anda alami, terakhir kami akan melakukan validasi aduan anda berdasarkan pasal yang tertera dalam UU TPKS</string>
+    <string name="btn_onboarding_start">Mulai</string>
 
 
 </resources>

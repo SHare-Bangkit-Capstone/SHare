@@ -1,17 +1,14 @@
 package com.rechit.share.ui.auth
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.rechit.share.MainActivity
-import com.rechit.share.R
 import com.rechit.share.databinding.ActivityLoginBinding
-import com.rechit.share.ui.dashboard.DashboardFragment
 
 class LoginActivity : AppCompatActivity() {
 
@@ -21,7 +18,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        Log.d("tes", "The Worldxxxx")
         // Initialize
         auth = Firebase.auth
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -34,17 +30,14 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener{
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
-            Log.d("tes", "Masukah $email dan $password")
             signIn(email, password)
         }
         binding.tvSignup.setOnClickListener {
-            Log.d("tes", "The World")
             startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
             finish()
         }
     }
     private fun signIn(email: String, password: String){
-        Log.d("tes", "The Worldz")
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
